@@ -18,3 +18,4 @@ folium.CircleMarker([35.195959,129.081479],
                     fill=True,
                     fill_color="#3186cc").add_to(m)
 
+m
