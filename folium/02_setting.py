@@ -9,3 +9,5 @@ m = folium.Map(location = [35.1795543,129.0756416],
                width = 750, height = 500
               )
 m
+
+m.save('busan.html') #file save
