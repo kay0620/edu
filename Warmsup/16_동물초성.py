@@ -38,6 +38,22 @@ print('<< 동물 초성 맞추기 >>')
 quiz = list(animals.keys())
 random.shuffle(quiz)
 
-for q in quiz:    
+count = 0
+for i in range(15):
+    
+    key = quiz[i]
     #사용자가 정답 입력
-    user = input(q + '? ')
+    user = input('%d.%s?'%(i+1, key))
+    
+    if user == animals[key]:
+        print('정답입니다!')
+        count += 1
+    else:
+        print('땡! 틀렸습니다!')
+
+print('정답 개수: ', count)
+
+if count >= 10 :
+    print('건강합니다~!')
+else:
+    print('치매초기!!')
